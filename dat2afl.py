@@ -118,7 +118,11 @@ def generate_afl_file(dat_file_name, ref_afl_file, polar_file, output_afl_file, 
 def main():
     with open('ReadMe.txt', 'w') as fh:
         fh.write(
-'''> Install python 3.8
+'''This file uses xfoil to generate polar files from given airfoil coordinates (.dat), scrapes Cl, Cd and Cm values 
+from polar file and dumps them to .afl file in order. A series of afl files are generated based on range of Reynolds
+Number provided.
+
+> Install python 3.*
 > Rename your .dat file (containing airfoil coordinates) as "coordinates.dat".
 > Paste here and replace existing "coordinates.dat" file.
 > run RunMe.bat
