@@ -1,5 +1,4 @@
 <h1> dat2afl <h1>
-
 <h5>This file uses xfoil to generate polar files from given airfoil coordinates (.dat), scrapes Cl, Cd and Cm values 
 from polar file and dumps them to .afl file in order. A series of afl files are generated based on range of Reynolds
 Number provided.
