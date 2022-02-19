@@ -116,7 +116,7 @@ def generate_afl_file(dat_file_name, ref_afl_file, polar_file, output_afl_file, 
         np.savetxt(fh, afl_final, fmt='%.4f')
 
 def main():
-    with open('ReadMe.txt', 'w') as fh:
+    with open('ReadMe.md', 'w') as fh:
         fh.write(
 '''<h1> dat2afl <h1>
 
