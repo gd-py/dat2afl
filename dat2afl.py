@@ -18,6 +18,9 @@ def generate_polar_files(dat_file_name, alpha_i, alpha_f, alpha_step, Re, n_iter
         input_file.write("PANE\n")
         input_file.write("OPER\n")
         input_file.write(f"Visc {Re}\n")
+        if Re >= 1000000:
+            input_file.write("VPAR\n")
+            input_file.write("n 5\n\n")
         input_file.write("PACC\n")
         input_file.write(f"{polar_file}\n\n")
         input_file.write(f"ITER {n_iter}\n")
